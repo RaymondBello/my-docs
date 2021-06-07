@@ -3,7 +3,7 @@ module.exports = {
   title: 'Ray',
   tagline: 'Engineer🔩 | Designer🖌️ | Developer💻',
   url: 'https://RaymondBello.github.io',
-  baseUrl: '/my-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://img.icons8.com/metro/26/000000/r.png',
