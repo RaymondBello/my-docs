@@ -3,12 +3,12 @@ module.exports = {
   title: 'Ray',
   tagline: 'Engineer🔩 | Designer🖌️ | Developer💻',
   url: 'https://RaymondBello.github.io',
-  baseUrl: '/my-documentation/',
+  baseUrl: '/my-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'https://img.icons8.com/metro/26/000000/r.png',
   organizationName: 'RaymondBello', // Usually your GitHub org/user name.
-  projectName: 'my-documentation', // Usually your repo name.
+  projectName: 'my-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       style: 'dark',
