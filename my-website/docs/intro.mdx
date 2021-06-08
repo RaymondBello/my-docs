@@ -1,0 +1,93 @@
+---
+sidebar_position: 1
+sidebar_label: 'Home'
+---
+
+#  Project Documentation
+
+This page is a great place to explore some my hardware prototypes, software, and other tools. 
+As well as find all the information you need to build your own.
+
+## Hardware Prototypes
+
+import HardwarePrototypes from './intro_page.js'
+
+<HardwarePrototypes/>
+
+
+
+:::tip Datasheets 
+
+For data-sheets for all hardware revisions [visit here](intro)
+
+:::
+
+## Software & Tools
+
+Various software related projects and tools.
+
+```python title="flash.py"
+#!/usr/bin/python
+
+import sys
+from pynput.keyboard import Key, Controller
+from time import sleep
+from datetime import datetime
+
+keyboard = Controller() 
+
+def press_keys_every(hold =3 , sleep_val = 60 , repeat = 3):
+    '''
+    Executes the defined key press sequence every `sleep_val` seconds
+        Paramaters: 
+            float: hold - number of seconds to hold down key
+            float: sleep_val - number of seconds to sleep after executing key press sequence
+            int: repeat - number of times to repeat loop
+    '''
+    
+    repeat = 60 * repeat
+    t_delta = 0
+
+    for num in range(repeat):
+        t_now = datetime.now()
+        keyboard.press(Key.up)
+        sleep(hold)
+        keyboard.release(Key.up)
+        print(f"Time Delta (H:M:S.uS): {t_delta} | {t_now}\n#{num+1}/{repeat} Finished key sequence, now sleeping for {sleep_val - hold} seconds.\n")
+        sleep(sleep_val - hold)
+        t_delta = datetime.now() - t_now
+
+    return 0
+
+if __name__ == "__main__":
+    print("\n*** Starting Awaken ***\n")
+    
+    try:
+        if len(sys.argv)>1:
+            res = press_keys_every(repeat=int(sys.argv[1]))
+        else:
+            # Edit this for modification
+            res = press_keys_every(repeat=6)
+            
+        if res == 0:
+            print("*** Awaken has finished running ***")
+            
+    except:
+        print("[ERROR] Awaken was interupted...\n")
+        raise
+
+```
+
+## Misc.
+
+Run the development server:
+
+```shell
+cd my-website
+
+npx docusaurus start
+```
+
+Your site starts at `http://localhost:3000`.
+
+Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
