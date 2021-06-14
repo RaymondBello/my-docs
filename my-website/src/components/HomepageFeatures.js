@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/python.svg').default,
     description: (
       <>
-        Designed scripts & tools for compile automation and regression testing, GUI's using PyQt5 & PySide2 and hardware testing scripts using UART or I2C protocols.
+        Designed scripts & tools for compile automation and regression testing, GUI's using PyQt5 & PySide2 and hardware testing scripts implementing JTAG/SWD or I2C protocols.
       </>
     ),
   },
