@@ -17,7 +17,7 @@ const HardwareList = [
     },
    {
      title: 'AVA v2',
-     Svg: require('./_imgs/argon.svg').default,
+     Svg: require('./_imgs/ava_v2_top.svg').default,
      description: (
        <>
          <i>UAV Flight Controller</i>
@@ -27,7 +27,7 @@ const HardwareList = [
    },
    {
       title: 'AVA v1',
-      Svg: require('./_imgs/AVA_r1_1.svg').default,
+      Svg: require('./_imgs/ava_r1_top.svg').default,
       description: (
         <>
           <i>UAV Flight Controller proto-board</i>
