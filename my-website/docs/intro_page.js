@@ -6,24 +6,14 @@ import styles from './intro_styles.module.css';
 
 const HardwareList = [
    {
-      title: 'HIRO v1',
-      Svg: require('./_imgs/t523.svg').default,
-      description: (
-        <>
-          <i>Fixed-wing Flight Computer SoM</i>
-        </>
-      ),
-      path: ''
-   },
-   {
-      title: 'AVA v3',
+      title: 'Hermes',
       Svg: require('./_imgs/electron.svg').default,
       description: (
         <>
-          <i>UAV Flight Controller</i>
+          <i>UAV Flight Controller<br/>[design-phase]</i>
         </>
        ),
-       path: '/docs/AVA-rev2/overview'
+       path: '/docs/Hermes-rev1/overview'
     },
    {
      title: 'AVA v2',
@@ -49,7 +39,7 @@ const HardwareList = [
 
 function HardwareDevice({Svg, title, description, path}) {
    return (
-      <div className={clsx('col col--3')}>
+      <div className={clsx('col col--4')}>
        <div className="text--center"
             >
          <Svg className={styles.featureSvg} alt={title} />

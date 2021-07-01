@@ -7,11 +7,26 @@ This embedded system is designed to function as the base flight controller respo
 
 ## Hardware Specification
  
-|  S/N   | Component             | Qty | Description  |
-|  --:   | :--                   | :-:  | :--          |
-|   1    | [<b>STM32F405RGT6</b>](https://datasheet.lcsc.com/lcsc/1809301224_STMicroelectronics-STM32F405RGT6_C15742.pdf)   |  1  | Main MCU for polling IMU and Radio PPM for control loop |
-|   2    | <b>STM32H7xx</b>      |  1  | Secondary MCU handling onboard guidance & navigation algorithms + extras |
+|  S/N   | Component                   | Qty | Description  |
+|  --:   | :--                         | :-: | :--          |
+|   1    | <b>STM32F405RGT6</b>        |  1  | Main MCU for polling IMU and Radio PPM for control loop |
+|   2    | <b>STM32H750VBT6</b>            |  1  | Secondary MCU handling onboard guidance & navigation algorithms + extras |
+|   3    | <b>Invensense MPU6050</b>   |  1  | 6DOF MEMS IMU (Gyroscope + Accelerometer)  |
+|   4    | <b>NXP MPL3115A2</b>        |  1  | Absolute pressure sensor with an I²C digital interface  |
 
+### Datasheets
+- [<b>STM32F405xx & STM32F407xx</b>](https://datasheet.lcsc.com/lcsc/1809301224_STMicroelectronics-STM32F405RGT6_C15742.pdf)
+   - 32-bit ARM®  Cortex™-M4 CPU with FPU
+- [<b>STM32H750VB STM32H750IB STM32H750XB</b>](www.google.com)
+   - 32-bit ARM® Cortex™-M7 480MHz MCU, 128 KB Flash, 1MB RAM
+- [<b>MPU6050</b>](https://datasheet.lcsc.com/lcsc/1811071024_TDK-InvenSense-MPU-6050_C24112.pdf)
+   -  6-axis MotionTracking device that combines a 3-axis gyroscope, 3-axis accelerometer, and a Digital Motion Processor™ (DMP)
+- [<b>MPL3115A2</b>](https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf)
+   - I²C precision pressure sensor with altimetry
+
+### Block Diagram
+...
 
 <br/> <br/> <br/> <br/> <br/> <br/> 
+
 Last Updated: <code>Today</code>
