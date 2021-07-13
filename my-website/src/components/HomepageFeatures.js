@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/python.svg').default,
     description: (
       <>
-        Designed scripts & tools for compile automation and regression testing, GUI's using PyQt5 & PySide2 and hardware testing scripts implementing JTAG/SWD or I2C protocols.
+        Designed tools for compile automation and regression testing, hardware testing scripts implementing JTAG&SWD.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/c.svg').default,
     description: (
       <>
-        Wrote firmware for embedded real-time systems (FreeRTOS & ChibiOS). Wrote programs to simulate the dynamics of various control systems.
+        Wrote firmware for embedded real-time systems (FreeRTOS & ChibiOS). Written programs to simulate the real-world dynamics of various control systems.
       </>
     ),
   },
@@ -44,7 +44,7 @@ const FeatureList = [
     Svg: require('../../static/img/gnu-bash.svg').default,
     description: (
       <>
-        Designed scripts for task automation to improve regression testing time/efficiency.
+        Designed scripts for task automation to improve regression testing efficiency.
       </>
     ),
   },

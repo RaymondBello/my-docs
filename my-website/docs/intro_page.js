@@ -10,7 +10,7 @@ const HardwareList = [
       Svg: require('./_imgs/electron.svg').default,
       description: (
         <>
-          <i>UAV Flight Controller<br/>[design-phase]</i>
+          <i>UAV Flight Control System<br/></i><b>[In Development]</b>
         </>
        ),
        path: '/docs/Hermes-rev1/overview'

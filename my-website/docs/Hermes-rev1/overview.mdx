@@ -2,16 +2,27 @@
 sidebar_position: 1
 ---
 
-# Introduction
-This embedded system is designed to function as the base flight controller responsible for reading sensors and controlling onboard actuators at approx 100Hz. <br/>
+# Overview
+Hermes is designed to function as the base flight control system responsible for guidance, navigation and control of a fixed-wing UAV - but general enough for most other vehicles.
+
+## Aims
+- Design a complete flight control system from scratch (hardware, software, control systems, navigation algorithms, ground control station, etc..)
+- <b>Goal</b>: Complete system consisting of standardised hardware and basic but robust software framework.
+- <b>Focus on developing and testing novel algorithms - not writing low-level code!</b>
+
+## Hardware Requirements
+- Standard set of sensors (e.g. IMU, barometer, ..)
+- Expansion and interface capabilities via various IOs.
+- Power distribution for servos.
+- Processing power.
+- <b>Affordability!</b>
+
 
 ## Hardware Specification
-
-
 ### Bill of Materials 
 |  S/N   | Component                   | Qty | Description  | Unit Price (CAD) | Price (CAD) |
 |  --:   | :--                         | :-: | :--          | :--   | :--   |
-|   1    | <b>RP2040</b>               |  2  | <b>Primary</b>: Main MCU for polling IMU and Radio PPM for control loop <br/><b>Secondary</b>: Secondary MCU handling onboard guidance & navigation algorithms + extras| $1.45 | $2.90 |
+|   1    | <b>RP2040</b>               |  2  | <b>Flight Control Computer</b>: Main MCU for polling IMU and Radio PPM for control loop <br/><b>Navigation Computer</b>: Secondary MCU handling onboard guidance & navigation algorithms + extras| $1.45 | $2.90 |
 |   2    | <b>Invensense MPU6050</b>   |  1  | 6DOF MEMS IMU (Gyroscope + Accelerometer)  | $3.50 | $3.50 |
 |   3    | <b>NXP MPL3115A2</b>        |  1  | Absolute pressure sensor with an I²C digital interface  | $3.50 | $3.50 |
 
@@ -26,6 +37,17 @@ This embedded system is designed to function as the base flight controller respo
 ### Block Diagram
 
 ![Hermes Block Diagram](_imgs/hermes_block.png)
+
+
+## Next Steps
+A list of a few things to complete:
+- [ ] [ 0%] Telemetry and messaging protocol.
+- [ ] [ 0%] Aircraft modelling, control system design and implementation.
+- [ ] [ 0%] Higher-level firmware (state machine, guidance algorithms, etc.)
+- [ ] [50%] Low-level firmware (e.g. device drivers and interfaces).
+- [ ] [90%] State Estimation (Madgwick & Kalman filters).
+- [X] [100%] Ground control station.
+
 
 
 <br/> <br/> <br/> <br/> <br/> <br/> 

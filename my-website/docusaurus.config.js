@@ -1,51 +1,53 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+
+
 module.exports = {
-  title: 'Ray',
-  tagline: 'Engineer🔩 | Designer🖌️ | Developer💻',
-  url: 'https://RaymondBello.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://img.icons8.com/metro/26/000000/r.png',
-  organizationName: 'RaymondBello', // Usually your GitHub org/user name.
-  projectName: 'my-docs', // Usually your repo name.
+  title: "Ray",
+  tagline: "Engineer🔩 | Designer🖌️ | Developer💻",
+  url: "https://RaymondBello.github.io",
+  baseUrl: "/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "https://img.icons8.com/metro/26/000000/r.png",
+  organizationName: "RaymondBello", // Usually your GitHub org/user name.
+  projectName: "my-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
-      style: 'dark',
-      title: 'Ray',
+      style: "dark",
+      title: "Ray",
       logo: {
-        alt: 'My Site Logo',
-        src: 'https://img.icons8.com/metro/26/000000/r.png',
+        alt: "My Site Logo",
+        src: "https://img.icons8.com/metro/26/000000/r.png",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'right',
-          label: 'Projects',
+          type: "doc",
+          docId: "intro",
+          position: "right",
+          label: "Hardware",
         },
-        {to: '/blog', label: 'Blog', position: 'right'},
+        { to: "/blog", label: "Dev. Log", position: "right" },
         {
-          href: 'https://github.com/RaymondBello/raymondbello.github.io/tree/main/',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/RaymondBello/",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Projects',
-              to: '/docs/intro',
+              label: "Hardware",
+              to: "/docs/intro",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Contact",
           items: [
             // {
             //   label: 'Stack Overflow',
@@ -55,22 +57,26 @@ module.exports = {
             //   label: 'Discord',
             //   href: 'https://discordapp.com/invite/docusaurus',
             // },
+            // {
+            //   label: "Twitter",
+            //   href: "https://twitter.com/ray_vss",
+            // },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/ray_vss',
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/raymond-b-488916189/",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
+            // {
+            //   label: "Blog",
+            //   to: "/blog",
+            // },
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/RaymondBello/',
+              label: "GitHub",
+              href: "https://github.com/RaymondBello/",
             },
           ],
         },
@@ -80,22 +86,22 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/RaymondBello/raymondbello.github.io/tree/main/',
+            "https://github.com/RaymondBello/raymondbello.github.io/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/RaymondBello/raymondbello.github.io/tree/main/blog/',
+            "https://github.com/RaymondBello/raymondbello.github.io/tree/main/blog/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],

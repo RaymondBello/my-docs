@@ -4,7 +4,7 @@ import styles from './HomepageExp.module.css';
 
 const ExperienceList = [
     {
-      title: 'HBM Verification',
+      title: 'HBM3 Verification Engineer',
       Svg: require('../../static/img/synopsys.svg').default,
       description: (
         <>
@@ -31,7 +31,7 @@ const ExperienceList = [
       ),
     },
     {
-      title: 'Technical Sales Assistant',
+      title: 'Technical Sales Associate',
       Svg: require('../../static/img/incredible-connection.svg').default,
       description: (
         <>
@@ -75,8 +75,9 @@ function Experience({ Svg, title, description }) {
 
 export default function HomepageExp() {
     return (
-        <section className={clsx('hero hero--primary', styles.heroBanner)}>
+        <section className={styles.heroBanner}>
             <div className="container">
+                <br/>
                 <h1 className="text--center">Experience & Education</h1>
                 <div className="row">
                     {ExperienceList.map((props, idx) => (
