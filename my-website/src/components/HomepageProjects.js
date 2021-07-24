@@ -12,7 +12,7 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Telemetry-UI",
     description: (
       <>
-        Ground Station Telemetry GUI to wirelessly monitor autonomous vehicles
+        Ground Station UI to wirelessly monitor autonomous vehicles
         over a websocket connection.
       </>
     ),
@@ -23,9 +23,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/ray-gram",
     description: (
       <>
-        This is a web-based photo library app created using React, derived from
-        the idea of the Instagram profile page. Created to showcase various
-        artworks and fashion shoots.
+        This is a web-based photo library app written in React. Created to showcase various
+        artworks and fashion shoots. 
       </>
     ),
   },
@@ -54,14 +53,62 @@ const ProjectList = [
     ),
   },
   {
+    title: "Flight Planner Website",
+    Image: require("@site/static/img/mission_planner.png").default,
+    link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Ground%20Control%20Software/Python%20Telemetry%20Dashboard/web",
+    description: (
+      <>
+        Designed a simple website to plan/manage waypoints for an autonomous R/C
+        fixed-wing plane.
+      </>
+    ),
+  },
+  {
+    title: "Aircraft Physics Simulation",
+    Image: require("@site/static/img/TakeOff_Demo.gif").default,
+    link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Flight%20Simulation/Unity%20Aircraft%20Simulation",
+    description: (
+      <>
+        This a fixed-wing physics simulation designed in Unity. The goal of the
+        project is to create a physics simulation environment to test and tune
+        fixed-wing flight controllers.
+      </>
+    ),
+  },
+
+  {
     title: "Pinned ReactNative-App",
     Image: require("@site/static/img/PinnedDemo.gif").default,
     link: "https://github.com/RaymondBello/Pinned-react-app",
     description: (
       <>
         A social app, that lets users leave geo-pins anywhere along with content
-        (Images and/or text) which is viewable by other users only in that
+        (images and/or text) which is viewable by other users only in that
         immediate vicinity.
+      </>
+    ),
+  },
+  {
+    title: "Baku Autonomous Racer",
+    Image: require("@site/static/img/track.png").default,
+    link: "",
+    description: (
+      <>
+        Designed a control system for a rc car that allows the car to self
+        optimize lap-times by utilizing onboard IMU sensors to maximize traction
+        while finding the shortest local path.
+      </>
+    ),
+  },
+  {
+    title: "Web-based Flight Instruments",
+    Image: require("@site/static/img/pfd.png").default,
+    link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Ground%20Control%20Software/Python%20Telemetry%20Dashboard/web",
+    description: (
+      <>
+        Designed a web-based primary flight instrument cluster which uses SVG
+        images and javascript to map the indicators onto an incoming telemetry
+        stream.
       </>
     ),
   },

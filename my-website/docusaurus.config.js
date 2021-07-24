@@ -26,7 +26,7 @@ module.exports = {
           position: "right",
           label: "Hardware",
         },
-        { to: "/blog", label: "Dev. Log", position: "right" },
+        // { to: "/blog", label: "Dev. Log", position: "right" },
         {
           href: "https://github.com/RaymondBello/",
           label: "GitHub",
