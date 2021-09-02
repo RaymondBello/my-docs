@@ -70,10 +70,10 @@ module.exports = {
         {
           title: "More",
           items: [
-            // {
-            //   label: "Blog",
-            //   to: "/blog",
-            // },
+            {
+              label: "Dev. Log",
+              to: "/blog",
+            },
             {
               label: "GitHub",
               href: "https://github.com/RaymondBello/",
