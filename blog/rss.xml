@@ -4,9 +4,23 @@
         <title>Ray Blog</title>
         <link>https://RaymondBello.github.io/blog</link>
         <description>Ray Blog</description>
-        <lastBuildDate>Wed, 01 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Bits&Bytes-0x03]]></title>
+            <link>https://RaymondBello.github.io/blog/3</link>
+            <guid>3</guid>
+            <pubDate>Fri, 03 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[IMU Configuration]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Bits&Bytes-0x02]]></title>
+            <link>https://RaymondBello.github.io/blog/2</link>
+            <guid>2</guid>
+            <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[I think I'm currently at a mini-crossroad.]]></description>
+        </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x01]]></title>
             <link>https://RaymondBello.github.io/blog/1</link>
