@@ -4,9 +4,23 @@
         <title>Ray Blog</title>
         <link>https://RaymondBello.github.io/blog</link>
         <description>Ray Blog</description>
-        <lastBuildDate>Fri, 03 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 28 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Bits&Bytes-0x05]]></title>
+            <link>https://RaymondBello.github.io/blog/5</link>
+            <guid>5</guid>
+            <pubDate>Tue, 28 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[It's all about timing]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Bits&Bytes-0x04]]></title>
+            <link>https://RaymondBello.github.io/blog/4</link>
+            <guid>4</guid>
+            <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Attitude Control System PCB]]></description>
+        </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x03]]></title>
             <link>https://RaymondBello.github.io/blog/3</link>

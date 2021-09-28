@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://RaymondBello.github.io/blog</id>
     <title>Ray Blog</title>
-    <updated>2021-09-03T00:00:00.000Z</updated>
+    <updated>2021-09-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://RaymondBello.github.io/blog"/>
     <subtitle>Ray Blog</subtitle>
     <icon>https://RaymondBello.github.io/https://img.icons8.com/metro/26/000000/r.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Bits&Bytes-0x05]]></title>
+        <id>5</id>
+        <link href="https://RaymondBello.github.io/blog/5"/>
+        <updated>2021-09-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's all about timing]]></summary>
+        <author>
+            <name>Ray Bello</name>
+            <uri>https://rayb.tech</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bits&Bytes-0x04]]></title>
+        <id>4</id>
+        <link href="https://RaymondBello.github.io/blog/4"/>
+        <updated>2021-09-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Attitude Control System PCB]]></summary>
+        <author>
+            <name>Ray Bello</name>
+            <uri>https://rayb.tech</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bits&Bytes-0x03]]></title>
         <id>3</id>
