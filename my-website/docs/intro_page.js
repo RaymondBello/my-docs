@@ -5,36 +5,39 @@ import styles from './intro_styles.module.css';
 
 
 const HardwareList = [
-   {
-      title: 'Hermes',
-      Svg: require('./_imgs/electron.svg').default,
-      description: (
-        <>
-          <i>UAV Flight Control System<br/></i><b>[In Development]</b>
-        </>
-       ),
-       path: '/docs/Hermes-rev1/overview'
-    },
-   {
-     title: 'AVA v2',
-     Svg: require('./_imgs/ava_v2_top.svg').default,
-     description: (
-       <>
-         <i>UAV Flight Controller</i>
-       </>
-      ),
-      path: '/docs/AVA-rev2/overview'
-   },
-   {
-      title: 'AVA v1',
-      Svg: require('./_imgs/ava_r1_top.svg').default,
-      description: (
-        <>
-          <i>UAV Flight Controller proto-board</i>
-        </>
-      ),
-      path: '/docs/AVA-rev1/overview'
-   }, 
+  {
+    title: "Hermes",
+    Svg: require("./_imgs/hermes.svg").default,
+    description: (
+      <>
+        <i>
+          UAS Flight Control System
+          <br />
+        </i>
+      </>
+    ),
+    path: "/docs/Hermes-rev1/overview",
+  },
+  {
+    title: "AVA v2",
+    Svg: require("./_imgs/ava_v2_top.svg").default,
+    description: (
+      <>
+        <i>Drone Flight Controller</i>
+      </>
+    ),
+    path: "/docs/AVA-rev2/overview",
+  },
+  {
+    title: "AVA v1",
+    Svg: require("./_imgs/ava_r1_top.svg").default,
+    description: (
+      <>
+        <i>Drone Flight Controller</i>
+      </>
+    ),
+    path: "/docs/AVA-rev1/overview",
+  },
 ];
 
 function HardwareDevice({Svg, title, description, path}) {

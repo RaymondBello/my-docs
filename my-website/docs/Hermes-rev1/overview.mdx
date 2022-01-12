@@ -11,7 +11,7 @@ Hermes is designed to function as the base flight control system responsible for
 - <b>Focus on developing and testing novel algorithms - not writing low-level code!</b>
 
 ## Hardware Requirements
-- Standard set of sensors (e.g. IMU, barometer, ..)
+- Standard set of sensors (e.g. IMU, barometer & airspeed sensor)
 - Expansion and interface capabilities via various IOs.
 - Power distribution for servos.
 - Processing power.
@@ -34,6 +34,8 @@ Hermes is designed to function as the base flight control system responsible for
 - [<b>MPL3115A2</b>](https://www.nxp.com/docs/en/data-sheet/MPL3115A2.pdf)
    - I²C precision pressure sensor with altimetry
 
+
+
 ### Block Diagram
 
 ![Hermes Block Diagram](./_imgs/hermes_block.png)
@@ -41,15 +43,14 @@ Hermes is designed to function as the base flight control system responsible for
 
 ## Next Steps
 A list of a few things to complete:
-- [ ] [ 0%] Telemetry and messaging protocol.
-- [ ] [ 0%] Aircraft modelling, control system design and implementation.
-- [ ] [ 0%] Higher-level firmware (state machine, guidance algorithms, etc.)
-- [ ] [50%] Low-level firmware (e.g. device drivers and interfaces).
-- [ ] [90%] State Estimation (Madgwick & Kalman filters).
+- [X] [100%] Telemetry and messaging protocol.
+- [X] [100%] Aircraft modelling, control system design and implementation.
+- [X] [100%] Higher-level firmware (state machine, guidance algorithms, etc.)
+- [X] [100%] Low-level firmware (e.g. device drivers and interfaces).
+- [X] [100%] State Estimation (Madgwick & Kalman filters).
 - [X] [100%] Ground control station.
 
 
-
-<br/> <br/> <br/> <br/> <br/> <br/> 
+<br/> <br/> <br/> 
 
 Last Updated: <code>Today</code>

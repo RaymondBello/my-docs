@@ -18,10 +18,11 @@ function HomepageHeader() {
           <b>{siteConfig.tagline}</b>
         </p>
         <p>
+          <h2>Engineer 🔩 • Designer 🖌️ • Developer 💻 </h2>
           <b>BASc Electrical Engineering & Computer Technology</b>
           <br />
-          My interests are in hardware design, real-time embedded systems
-           and web development.
+          My interests are in hardware design, real-time embedded systems and
+          web development.
           <br />
           Aside from my degree program; I spend quite a bit of my time designing
           & building flight control systems.

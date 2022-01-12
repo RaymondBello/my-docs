@@ -2,9 +2,7 @@
 
 
 module.exports = {
-  title: "Ray",
-  tagline: "Engineer🔩 | Designer🖌️ | Developer💻",
-  url: "https://RaymondBello.github.io",
+  title: "Ray",  url: "https://RaymondBello.github.io",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
