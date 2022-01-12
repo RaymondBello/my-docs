@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_documentation=self.webpackChunkmy_documentation||[]).push([[345],{1134:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/free-rtos","name":"free-rtos","count":1,"permalink":"/blog/tags/free-rtos"}')}}]);

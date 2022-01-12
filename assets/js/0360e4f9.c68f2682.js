@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_documentation=self.webpackChunkmy_documentation||[]).push([[420],{9684:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/embedded-systems","name":"embedded-systems","count":4,"permalink":"/blog/tags/embedded-systems"}')}}]);

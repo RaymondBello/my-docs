@@ -4,16 +4,9 @@
         <title>Ray Blog</title>
         <link>https://RaymondBello.github.io/blog</link>
         <description>Ray Blog</description>
-        <lastBuildDate>Tue, 28 Sep 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <item>
-            <title><![CDATA[Bits&Bytes-0x05]]></title>
-            <link>https://RaymondBello.github.io/blog/5</link>
-            <guid>5</guid>
-            <pubDate>Tue, 28 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[InvenSense MEMS Digital Motion Processor (DMP)]]></description>
-        </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x04]]></title>
             <link>https://RaymondBello.github.io/blog/4</link>
@@ -33,7 +26,7 @@
             <link>https://RaymondBello.github.io/blog/2</link>
             <guid>2</guid>
             <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[I think I'm currently at a mini-crossroad.]]></description>
+            <description><![CDATA[Tasks contd.]]></description>
         </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x01]]></title>
