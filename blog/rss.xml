@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Ray Blog</title>
         <link>https://RaymondBello.github.io/blog</link>
@@ -13,6 +13,8 @@
             <guid>4</guid>
             <pubDate>Wed, 22 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Matek inspired this...]]></description>
+            <content:encoded><![CDATA[<h2>Matek inspired this...</h2><p>I&#x27;ve spent alot of time thinking about an ideal size for my final PCB.
+There are currently some contraints that should be taken into account when planning on minimizing cost, maximazing flexibility and adhereing to airframe dimensions.</p><p>I have been doing some research on this topic and I&#x27;ve found that there seems to be a widespread agreement on what an ideal size should be for an onboard flight control system (amongst hobbyists and commercially).</p><p>MatekSys have made numerous flight control boards over the years so its safe to say their designs have been tried and true especially in the hobbyist community. The F405 Wing is probably one of their most popular boards. And I happen to own a couple F405&#x27;s myself.</p><table><thead><tr><th align="center"><img src="http://www.mateksys.com/wp-content/uploads/2018/06/F411-WING_3.jpg" alt="img"/></th></tr></thead><tbody><tr><td align="center">F405 Wing (left), F411 Wing (right)</td></tr></tbody></table><h2>Small Big Brother</h2><p>The F411 Wing is the smaller updated version of the F405 board with all the essentials included. I don&#x27;t own one but I plan on using a layout very similar to the F411 in my own design. The peripherals, connector and solder pad placement are some of the main traits that I plan on trying to carry over into my own design.</p><p>Updates to follow...</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x03]]></title>
@@ -20,6 +22,54 @@
             <guid>3</guid>
             <pubDate>Fri, 03 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[IMU Configuration]]></description>
+            <content:encoded><![CDATA[<h2>IMU Configuration</h2><h3>Sequence</h3><p>Added a step to select the internal 8Mhz oscillator as the clock source</p><pre><code class="language-c">// Set MPU9250 Clock Source to use the X Gyro for reference, which is slightly better than the default internal clock source.
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |     |     |     |     |     |   CLKSEL[2:0]   |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+uint8_t buf[2] = {MPU9250_RA_PWR_MGMT_1, MPU9250_CLOCK_PLL_XGYRO};
+i2c_write_blocking(i2c_default, this-&gt;i2c_addr, buf, 2, false);
+#if defined IMU_VERBOSE_CONFIG
+    printf(&quot;[IMU][CONFIG] wrote %d to MPU9250_RA_PWR_MGMT_1:%d\n&quot;, buf[1], MPU9250_RA_PWR_MGMT_1);
+#endif
+sleep_ms(DELAY_BETWEEN_WR_MS);
+</code></pre><p>Added full scale range sensitivity selection for both accelerometer and gyroscope. </p><pre><code class="language-c">// Set Gyro full scale range
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |     |     |     |FS_SEL[1:0]|     |     |     |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+buf[0] = MPU9250_GYRO_CONFIG;
+buf[1] = (uint8_t)setting.gyro_fs_sel &lt;&lt; 3;
+i2c_write_blocking(i2c_default, this-&gt;i2c_addr, buf, 2, false);
+#if defined IMU_VERBOSE_CONFIG
+    printf(&quot;[IMU][CONFIG] wrote %d to MPU9250_GYRO_CONFIG:%d\n&quot;, buf[1], MPU9250_GYRO_CONFIG);
+#endif
+sleep_ms(DELAY_BETWEEN_WR_MS);
+
+// Set Accel full scale range
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |  7  |  6  |  5  |  4  |  3  |  2  |  1  |  0  |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+// |     |     |     |AFS_SEL[1:0]|    |     |     |
+// +-----+-----+-----+-----+-----+-----+-----+-----+
+buf[0] = MPU9250_ACCEL_CONFIG;
+buf[1] = (uint8_t)setting.accel_fs_sel &lt;&lt; 3;
+i2c_write_blocking(i2c_default, this-&gt;i2c_addr, buf, 2, false);
+#if defined IMU_VERBOSE_CONFIG
+    printf(&quot;[IMU][CONFIG] wrote %d to MPU9250_ACCEL_CONFIG:%d\n&quot;, buf[1], MPU9250_ACCEL_CONFIG);
+#endif
+sleep_ms(DELAY_BETWEEN_WR_MS);
+</code></pre><h3>Validating Sequence</h3><pre><code class="language-json">[IMU][CONFIG] wrote 1 to MPU9250_RA_PWR_MGMT_1:107
+[IMU][CONFIG] wrote 0 to MPU9250_GYRO_CONFIG:27         // GYRO_250DPS
+[IMU][CONFIG] wrote 0 to MPU9250_ACCEL_CONFIG:28        // ACCEL_2G
+</code></pre><h2>Tasks contd.</h2><h3>MPU9250 IMU Driver</h3><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Done</strong>: Implement full scale range and gyro sensitivity selection, currently using default settings.</li><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Done</strong>: Add hardware reset &amp; calibration sequence</li></ul><h3>Attitude Estimation</h3><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Done</strong>: Refactor the existing attitude estimation algorithm with modularity/flexibility in mind.</li></ul><h2>Defines Used</h2><pre><code class="language-c++">#define DELAY_BETWEEN_WR_MS         50        // Delay between I2C writes during configuration
+#define MPU9250_GYRO_CONFIG         0x1B      // Gyro FS_SEL address
+#define MPU9250_ACCEL_CONFIG        0x1C      // Accel AFS_SEL address
+#define MPU9250_CLOCK_PLL_XGYRO 0x01        // Xgyro pll clock 
+#define MPU9250_RA_PWR_MGMT_1   0x6B      // Power management register 1 address
+</code></pre>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x02]]></title>
@@ -27,6 +77,7 @@
             <guid>2</guid>
             <pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Tasks contd.]]></description>
+            <content:encoded><![CDATA[<h2>Tasks contd.</h2><h3>MPU9250 IMU Driver</h3><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Completed</strong>: Implement full scale range and gyro sensitivity selection, currently using default settings.</li><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Completed</strong>: Add hardware reset &amp; calibration sequence</li></ul><h3>Attitude Estimation</h3><ul class="contains-task-list"><li class="task-list-item"><input type="checkbox" checked="" disabled=""/> <strong>Completed</strong>: Refactor the existing attitude estimation algorithm with modularity/flexibility in mind.</li></ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Bits&Bytes-0x01]]></title>
@@ -34,6 +85,8 @@
             <guid>1</guid>
             <pubDate>Wed, 01 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The system is currently in a stable state with regards to various sensor drivers and core flight logic.]]></description>
+            <content:encoded><![CDATA[<p>The system is currently in a stable state with regards to various sensor drivers and core flight logic.
+<em>Although</em> there are a lot of tuning modifications that need to be added to the attitude estimation madgwick filter to make it flight worthy...</p><h2>Current tasks</h2><ul><li>MPU9250 IMU Driver <ul><li><strong>In-Progress</strong>: Implement full scale range and gyro sensitivity selection, currently using default settings.</li><li><strong>Outstanding</strong>: Add hardware reset &amp; calibration sequence</li></ul></li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
