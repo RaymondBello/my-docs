@@ -1,10 +1,13 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 module.exports = {
-  title: "Ray",  url: "https://RaymondBello.github.io",
+  title: "Ray",
+  url: "https://RaymondBello.github.io",
   baseUrl: "/",
-  onBrokenLinks: "warn",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://img.icons8.com/metro/26/000000/r.png",
   organizationName: "RaymondBello", // Usually your GitHub org/user name.
@@ -88,6 +91,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
           // Please change this to your repo.
           editUrl:
             "https://github.com/RaymondBello/raymondbello.github.io/tree/main/",
@@ -104,4 +109,13 @@ module.exports = {
       },
     ],
   ],
+  stylesheets: [
+    {
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css",
+      integrity:
+        "sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc",
+      crossorigin: "anonymous",
+    },
+  ],
+  themes: ["@docusaurus/theme-live-codeblock"],
 };
