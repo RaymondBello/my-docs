@@ -15,11 +15,11 @@ const SVGList = [
 
 function SVGimage({ title, Svg }) {
     return (
-      <div className={clsx("col col--6")}>
+      <div className={clsx("col")}>
         <div className="text--center">
           <Svg className={styles.featureSvg} alt={title} />
           <div className="text--center padding-horiz--md">
-            <h3>{title}</h3>
+            <b>{title}</b>
           </div>
         </div>
       </div>
