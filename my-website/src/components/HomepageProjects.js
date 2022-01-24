@@ -7,13 +7,24 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const ProjectList = [
   {
+    title: "HermesFC",
+    Image: require("@site/static/img/hermes_top.gif").default,
+    link: "/docs/Hermes-rev1/overview",
+    description: (
+      <>
+        4-layer UAV flight controller designed to actively stabilize quadcopter
+        and fixed-wing vehicles.
+      </>
+    ),
+  },
+  {
     title: "Ground Station Telemetry GUI",
     Image: require("@site/static/img/Telemetry_Demo1.gif").default,
     link: "https://github.com/RaymondBello/Telemetry-UI",
     description: (
       <>
-        Ground Station UI to wirelessly monitor autonomous vehicles
-        over a websocket connection.
+        Ground Station UI to wirelessly monitor autonomous vehicles over a
+        websocket connection.
       </>
     ),
   },
@@ -23,8 +34,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/ray-gram",
     description: (
       <>
-        This is a web-based photo library app written in React. Created to showcase various
-        artworks and fashion shoots. 
+        This is a web-based photo library app written in React. Created to
+        showcase various artworks and fashion shoots.
       </>
     ),
   },
@@ -47,8 +58,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/A-Star-Algorithm-Visualization",
     description: (
       <>
-        This code is aimed at visualizing an interactive interface for the A*
-        Path finding algorithm using PyGame.
+        Aimed at creating an interactive interface for the A* Path finding
+        algorithm using Python.
       </>
     ),
   },
@@ -69,9 +80,9 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Flight%20Simulation/Unity%20Aircraft%20Simulation",
     description: (
       <>
-        This a fixed-wing physics simulation designed in Unity. The goal of the
+        This a fixed-wing physics simulation written in Unity. The goal of the
         project is to create a physics simulation environment to test and tune
-        fixed-wing flight controllers.
+        fixed-wing flight controller gain parameters.
       </>
     ),
   },
@@ -83,8 +94,8 @@ const ProjectList = [
     description: (
       <>
         A social app, that lets users leave geo-pins anywhere along with content
-        (images and/or text) which is viewable by other users only in that
-        immediate vicinity.
+        (images and/or text) viewable by other users only in that immediate
+        vicinity.
       </>
     ),
   },

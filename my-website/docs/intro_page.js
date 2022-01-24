@@ -11,7 +11,7 @@ const HardwareList = [
     description: (
       <>
         <i>
-          UAS Flight Control System
+          UAV Flight Control System
           <br />
         </i>
       </>
@@ -42,7 +42,7 @@ const HardwareList = [
 
 function HardwareDevice({Svg, title, description, path}) {
    return (
-      <div className={clsx('col col--4')}>
+      <div className={clsx('col')}>
        <div className="text--center"
             >
          <Svg className={styles.featureSvg} alt={title} />
