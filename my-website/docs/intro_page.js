@@ -11,7 +11,7 @@ const HardwareList = [
     description: (
       <>
         <i>
-          UAS Flight Control System
+          UAV Flight Control System
           <br />
         </i>
       </>
