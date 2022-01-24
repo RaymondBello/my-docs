@@ -8,7 +8,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 const ProjectList = [
   {
     title: "HermesFC",
-    Image: require("@site/static/img/hermes_top.gif").default,
+    Image: require("@site/static/img/hermes.gif").default,
     link: "/docs/Hermes-rev1/overview",
     description: (
       <>
