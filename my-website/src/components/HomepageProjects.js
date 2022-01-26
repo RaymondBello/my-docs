@@ -86,19 +86,6 @@ const ProjectList = [
       </>
     ),
   },
-
-  {
-    title: "Pinned ReactNative-App",
-    Image: require("@site/static/img/PinnedDemo.gif").default,
-    link: "https://github.com/RaymondBello/Pinned-react-app",
-    description: (
-      <>
-        A social app, that lets users leave geo-pins anywhere along with content
-        (images and/or text) viewable by other users only in that immediate
-        vicinity.
-      </>
-    ),
-  },
   {
     title: "Baku Autonomous Racer",
     Image: require("@site/static/img/track.png").default,
