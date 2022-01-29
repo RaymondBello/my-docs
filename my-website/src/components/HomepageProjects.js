@@ -134,9 +134,12 @@ function Project({ Image, title, description, link }) {
 
 export default function HomepageProjects() {
   return (
-    <section className={clsx("hero hero--primary", styles.heroBanner)}>
+    <section className={styles.heroBanner}>
       <div className="container">
+        <br />
         <h1 className="text--center">Projects</h1>
+        <br /> 
+
         <div className="row">
           {ProjectList.map((props, idx) => (
             <Project key={idx} {...props} />

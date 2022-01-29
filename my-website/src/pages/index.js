@@ -60,9 +60,9 @@ export default function Home() {
         <HomepageFeatures />
       </main>
 
-      <HomepageProjects/>
-
       <HomepageExp />
+
+      <HomepageProjects/>
     </Layout>
   );
 }

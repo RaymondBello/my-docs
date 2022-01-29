@@ -75,7 +75,7 @@ function Experience({ Svg, title, description }) {
 
 export default function HomepageExp() {
     return (
-        <section className={styles.heroBanner}>
+        <section className={clsx("hero hero--primary", styles.heroBanner)}>
             <div className="container">
                 <br/>
                 <h1 className="text--center">Experience & Education</h1>
