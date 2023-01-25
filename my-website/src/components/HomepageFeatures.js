@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/python.svg').default,
     description: (
       <>
-        Designed tools for compile automation and regression testing, hardware testing scripts implementing JTAG&SWD.
+        Created tools to streamline the compilation process and facilitate regression testing, and wrote scripts to control hardware using JTAG and SWD protocols.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/c.svg').default,
     description: (
       <>
-        Wrote firmware for embedded real-time systems (FreeRTOS & ChibiOS). Written programs to simulate the real-world dynamics of various control systems.
+        Developed firmware for embedded hard real-time systems (FreeRTOS & ChibiOS) and wrote programs to simulate the behavior of various control systems in real-world scenarios.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('../../static/img/javascript.svg').default,
     description: (
       <>
-        Developed responsive dynamic websites for data/content management, UAV ground station UI's and mobile applications.
+        Created custom, responsive, and dynamic websites, UAV ground station user interfaces, and mobile apps for data and content management.
       </>
     ),
   },
@@ -35,7 +35,7 @@ const FeatureList = [
     Svg: require('../../static/img/verilog.svg').default,
     description: (
       <>
-        Experience using SystemVerilog for verification of digital circuits at the RTL level. Developed interfaces and modules for the top-level testbench.
+        Crafted test plans, executed tests, and established verification processes and systems to validate DSP functionality. Additionally, I utilized SystemVerilog/UVM methodologies to structure verification environments.
       </>
     ),
   },
@@ -44,7 +44,7 @@ const FeatureList = [
     Svg: require('../../static/img/gnu-bash.svg').default,
     description: (
       <>
-        Designed scripts for task automation to improve regression testing efficiency.
+        Created scripts for task automation to increase the efficiency of regression testing.
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList = [
     Svg: require('../../static/img/perl.svg').default,
     description: (
       <>
-        Experience maintaining and improving legacy scripts and tools written in Perl.
+        Experience preserving and augmenting legacy scripts and tools written in Perl.
       </>
     ),
   },
