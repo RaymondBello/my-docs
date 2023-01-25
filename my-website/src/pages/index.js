@@ -24,8 +24,7 @@ function HomepageHeader() {
           My interests are in hardware design, real-time embedded systems and
           web development.
           <br />
-          Aside from my degree program; I spend quite a bit of my time designing
-          & building flight control systems.
+          My primary focus is on the design and development of flight control systems.
         </p>
         <div className={styles.buttons}>
           {/* <Link
