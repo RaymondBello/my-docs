@@ -4,11 +4,20 @@ import styles from './HomepageExp.module.css';
 
 const ExperienceList = [
     {
-      title: 'HBM3 Verification Engineer',
+      title: 'SERDES Digital Design Engineer',
       Svg: require('../../static/img/synopsys.svg').default,
       description: (
         <>
-          Jan 2021 - Present
+          May 2022 - Present
+        </>
+      ),
+    },
+    {
+      title: 'HBM Verification Engineer',
+      Svg: require('../../static/img/synopsys.svg').default,
+      description: (
+        <>
+          Jan 2021 - May 2022
         </>
       ),
     },
@@ -44,7 +53,7 @@ const ExperienceList = [
       Svg: require('../../static/img/uottawa.svg').default,
       description: (
         <>
-          2015 - 2020
+          2015 - 2021
         </>
       ),
     },
