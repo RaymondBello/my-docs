@@ -23,7 +23,7 @@ const ExperienceList = [
     },
     {
       title: 'Printing Services Technician',
-      Svg: require('../../static/img/TPH1.svg').default,
+      Svg: require('../../static/img/TPH.svg').default,
       description: (
         <>
           Summer 2019
