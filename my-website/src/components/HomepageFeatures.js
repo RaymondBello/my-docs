@@ -30,7 +30,6 @@ const FeatureList = [
       <>
         I have designed and developed websites that are adaptable to any device, innovative with customizable interfaces, and have dynamic components. 
         In addition to these websites, I have also created unique user interfaces specifically for unmanned aerial vehicle (UAV) ground stations. 
-        Lastly, I have developed mobile applications catered to managing data and content that are both user-friendly and functional.
       </>
     ),
   },
