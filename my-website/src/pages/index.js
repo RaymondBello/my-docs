@@ -19,7 +19,7 @@ function HomepageHeader() {
         </p>
         <p>
           <h2>Engineer 🔩 • Designer 🖌️ • Developer 💻 </h2>
-          <b>BASc Electrical Engineering & Computer Technology</b>
+          <b>BASc Electrical Engineering & Computer Technology</b> <br />
           I have a strong passion for hardware design, particularly in the context of creating real-time embedded systems. <br />
           Additionally, I thoroughly enjoy delving into the world of web development.<br />
           That being said, my primary area of interest is centered around the intricate processes involved in designing and constructing flight control systems. <br />
