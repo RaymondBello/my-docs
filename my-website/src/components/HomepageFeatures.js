@@ -8,7 +8,8 @@ const FeatureList = [
     Svg: require('../../static/img/python.svg').default,
     description: (
       <>
-        Created tools to streamline the compilation process and facilitate regression testing, and wrote scripts to control hardware using JTAG and SWD protocols.
+        Developed a series of tools aimed at optimizing the compilation process, as well as simplifying regression testing procedures. 
+        Additionally, I composed an array of scripts utilizing JTAG and SWD protocols to enable seamless hardware control and troubleshooting.
       </>
     ),
   },
@@ -17,7 +18,8 @@ const FeatureList = [
     Svg: require('../../static/img/c.svg').default,
     description: (
       <>
-        Developed firmware for embedded hard real-time systems (FreeRTOS & ChibiOS) and wrote programs to simulate the behavior of various control systems in real-world scenarios.
+        I designed and implemented firmware for embedded hard real-time systems, utilizing both FreeRTOS and ChibiOS. 
+        Additionally, I created programs to accurately replicate the behavior of different control systems, allowing for realistic testing and evaluation in practical environments.
       </>
     ),
   },
@@ -26,7 +28,9 @@ const FeatureList = [
     Svg: require('../../static/img/javascript.svg').default,
     description: (
       <>
-        Created custom, responsive, and dynamic websites, UAV ground station user interfaces, and mobile apps for data and content management.
+        I have designed and developed websites that are adaptable to any device, innovative with customizable interfaces, and have dynamic components. 
+        In addition to these websites, I have also created unique user interfaces specifically for unmanned aerial vehicle (UAV) ground stations. 
+        Lastly, I have developed mobile applications catered to managing data and content that are both user-friendly and functional.
       </>
     ),
   },
@@ -35,7 +39,8 @@ const FeatureList = [
     Svg: require('../../static/img/verilog.svg').default,
     description: (
       <>
-        Crafted test plans, executed tests, and established verification processes and systems to validate DSP functionality. Additionally, I utilized SystemVerilog/UVM methodologies to structure verification environments.
+        I meticulously designed test plans and carried out testing procedures to confirm the reliability of DSP functionality. 
+        To enhance the verification process, I established efficient systems and methods, incorporating the SystemVerilog infrastructure and UVM methodologies to structure versatile and effective verification environments.
       </>
     ),
   },
@@ -44,7 +49,8 @@ const FeatureList = [
     Svg: require('../../static/img/gnu-bash.svg').default,
     description: (
       <>
-        Created scripts for task automation to increase the efficiency of regression testing.
+        The process of regression testing can be lengthy and time-consuming, often requiring manual input. To address this, I created customized scripts designed to automate repetitive tasks, thereby increasing overall test efficiency. 
+        The scripts were tailored to the specific needs of the company, and were successful in streamlining the testing process while ensuring accuracy and reliability.
       </>
     ),
   },
@@ -53,7 +59,9 @@ const FeatureList = [
     Svg: require('../../static/img/perl.svg').default,
     description: (
       <>
-        Experience preserving and augmenting legacy scripts and tools written in Perl.
+        Having worked with legacy scripts and tools written in Perl, I have gained valuable experience in their preservation and augmentation. 
+        My expertise in this area includes identifying areas for improvement, implementing updates without disrupting existing functionality, and ensuring backward compatibility. 
+        Through my work, I have successfully maintained and enhanced the functionality of Perl-based systems for clients.
       </>
     ),
   },
