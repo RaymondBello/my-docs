@@ -12,8 +12,9 @@ const ProjectList = [
     link: "/docs/Hermes-rev1/overview",
     description: (
       <>
-        4-layer UAV flight controller designed to actively stabilize quadcopter
-        and fixed-wing vehicles.
+        This 4-layer UAV flight controller is a specialized design made to stabilize both quadcopter and fixed-wing vehicles. 
+        With its active stabilization abilities, this controller ensures a smooth, secure flying experience. 
+        From navigating challenging terrains to maintaining a steady altitude, this controller is a crucial component of any well-rounded UAV.
       </>
     ),
   },
@@ -23,8 +24,9 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Telemetry-UI",
     description: (
       <>
-        Ground Station UI to wirelessly monitor autonomous vehicles over a
-        websocket connection.
+        The Ground Station UI offers a wireless means of overseeing the behavior of autonomous vehicles through a secure WebSocket connection. 
+        This interface allows remote monitoring of various data points, including speed, location, and operational status, enabling operators to remotely make changes and adjustments when necessary. 
+        By providing real-time visibility into autonomous vehicle operations, the Ground Station UI offers enhanced control, convenience, and overall safety.
       </>
     ),
   },
@@ -34,8 +36,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/ray-gram",
     description: (
       <>
-        This is a web-based photo library app written in React. Created to
-        showcase various artworks and fashion shoots.
+       The React-based photo library app is a convenient platform that allows artists and photographers to exhibit their diverse projects and fashion shoots. 
+       Through a user-friendly interface, users can easily browse and organize their photo collections, while leveraging various tools and customizable features to highlight their creative work.
       </>
     ),
   },
@@ -47,7 +49,7 @@ const ProjectList = [
       <>
         Planet Maker is a simple unity-based tool, aimed at using Procedural
         Geometry to create a variety of 3D planets which can be exported as
-        individual assets for 3D-printing or for use within any other graphic
+        individual assets for 3D printing or for use within any other graphic
         rendering game engine.
       </>
     ),
@@ -58,8 +60,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/A-Star-Algorithm-Visualization",
     description: (
       <>
-        Aimed at creating an interactive interface for the A* Path finding
-        algorithm using Python.
+        The purpose of this application is to provide a dynamic and engaging platform for users to explore the A* Pathfinding algorithm's functionality. 
+      With Python as its programming language, users can easily interact with and manipulate the algorithm to best suit their needs.
       </>
     ),
   },
@@ -69,8 +71,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Ground%20Control%20Software/Python%20Telemetry%20Dashboard/web",
     description: (
       <>
-        Designed a simple website to plan/manage waypoints for an autonomous R/C
-        fixed-wing plane.
+        I created a user-friendly website that enables the seamless organization and oversight of navigation points for an unmanned fixed-wing aircraft.
+      This platform aids in the efficient planning and management of the plane's flight path.
       </>
     ),
   },
@@ -92,8 +94,8 @@ const ProjectList = [
     link: "",
     description: (
       <>
-        Designed a control system for a rc car that allows the car to self
-        optimize lap-times by utilizing onboard IMU sensors to maximize traction
+        Designed a control system for an RC car that allows the car to self
+        optimize lap times by utilizing onboard IMU sensors to maximize traction
         while finding the shortest local path.
       </>
     ),
@@ -104,9 +106,8 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Glider-Autopilot/tree/main/Ground%20Control%20Software/Python%20Telemetry%20Dashboard/web",
     description: (
       <>
-        Designed a web-based primary flight instrument cluster which uses SVG
-        images and javascript to map the indicators onto an incoming telemetry
-        stream.
+        I created an online cockpit display panel for pilots with primary flight instruments. 
+        Featuring advanced programming techniques using scalable vector graphics (SVG) and javascript, it can synchronize telemetry data to create a highly responsive and efficient display interface.
       </>
     ),
   },
