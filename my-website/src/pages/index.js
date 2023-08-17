@@ -20,10 +20,9 @@ function HomepageHeader() {
         <p>
           <h2>Engineer 🔩 • Designer 🖌️ • Developer 💻 </h2>
           <b>BASc Electrical Engineering & Computer Technology</b> <br />
-          I have a strong passion for hardware design, particularly in the context of creating real-time embedded systems. <br />
-          Additionally, I thoroughly enjoy delving into the world of web development.<br />
-          That being said, my primary area of interest is centered around the intricate processes involved in designing and constructing flight control systems. <br />
-          With years of experience, I am proud to have refined my skills in this field and look forward to continuing to push the boundaries of what is possible.
+          I'm deeply passionate about hardware design, especially crafting real-time embedded systems. <br />
+          I also find joy in learning about web development frameworks and designing responsive websites. <br />
+          My main interest lies in intricate flight control system design - years of experience have honed my skills, and I'm excited to push further.
         </p>
         <div className={styles.buttons}>
           {/* <Link
