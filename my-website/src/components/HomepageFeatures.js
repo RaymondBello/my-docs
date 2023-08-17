@@ -18,8 +18,8 @@ const FeatureList = [
     Svg: require('../../static/img/c.svg').default,
     description: (
       <>
-        I designed and implemented firmware for embedded hard real-time systems, utilizing both FreeRTOS and ChibiOS. 
-        Additionally, I created programs to accurately replicate the behavior of different control systems, allowing for realistic testing and evaluation in practical environments.
+        I've designed, implemented and tested firmware for embedded hard real-time systems, utilizing both FreeRTOS and ChibiOS. 
+        Additionally, I've created programs to accurately simulate the dynamic behavior of different control systems, allowing for realistic testing and evaluation in practical environments.
       </>
     ),
   },
