@@ -24,7 +24,7 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/Telemetry-UI",
     description: (
       <>
-        The Ground Station UI offers a wireless means of overseeing the behavior of autonomous vehicles through a secure WebSocket connection. 
+        This Ground Station GUI offers a wireless means of overseeing the behavior of autonomous vehicles through a secure WebSocket connection. 
         This interface allows remote monitoring of various data points, including speed, location, and operational status, enabling operators to remotely make changes and adjustments when necessary. 
         By providing real-time visibility into autonomous vehicle operations, the Ground Station UI offers enhanced control, convenience, and overall safety.
       </>
@@ -36,7 +36,7 @@ const ProjectList = [
     link: "https://github.com/RaymondBello/ray-gram",
     description: (
       <>
-       The React-based photo library app is a convenient platform that allows artists and photographers to exhibit their diverse projects and fashion shoots. 
+       This React-based photo library app is a convenient platform that allows artists and photographers to showcase their diverse projects and fashion shoots. 
        Through a user-friendly interface, users can easily browse and organize their photo collections, while leveraging various tools and customizable features to highlight their creative work.
       </>
     ),
