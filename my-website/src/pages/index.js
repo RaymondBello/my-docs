@@ -19,9 +19,6 @@ function HomepageHeader() {
         </p>
         <p>
           <h2>Engineer 🔩 • Designer 🖌️ • Developer 💻 </h2>
-          <b>BASc Electrical Engineering & Computer Technology</b> <br />
-          I have a strong passion for hardware design, particularly real-time embedded systems. I also enjoy learning about web development frameworks and creating responsive websites. 
-          My primary interest lies in intricate flight control system design, and I am eager to continue advancing my skills.
         </p>
         <div className={styles.buttons}>
           {/* <Link
