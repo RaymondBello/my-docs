@@ -50,12 +50,13 @@ export default function Home() {
       <HomepageHeader />
 
       <main>
-        <HomepageFeatures />
+        <HomepageProjects/>
+        
       </main>
-
-      <HomepageExp />
-
-      <HomepageProjects/>
+        <HomepageFeatures />
+        
+        <HomepageExp />
+      
     </Layout>
   );
 }
