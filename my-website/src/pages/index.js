@@ -51,11 +51,11 @@ export default function Home() {
 
       <main>
         <HomepageProjects/>
-        
       </main>
-        <HomepageFeatures />
         
         <HomepageExp />
+
+        <HomepageFeatures />
       
     </Layout>
   );
