@@ -4,10 +4,13 @@ sidebar_position: 1
 
 # Overview
 AeroCore is designed to be a modular GNC system. Targeting autonomous systems including but not limited to fixed-wing or multi-rotor platforms.
+It is comprised of a base board(AeroBase) and modular M.2 SOMs(SOM Cores) together they form the AeroCore platform.
+
 
 ## Aims
-- Modular design
-- Embedded Linux 5.0+ for Guidance and Navigation application development
+- Modular & Extensible design
+- Embedded Linux 5.0+ for Guidance and Navigation 
+- MCU for Actuator Control
 - WiFi support + SSH 
 - OTA MCU firmware updates
 
@@ -18,8 +21,12 @@ AeroCore is designed to be a modular GNC system. Targeting autonomous systems in
 - Camera Video OSD output to VTX (if applicable)
 - Actuator Control loop >= 1KHz
 - Guidance/Navigation loop >= 100Hz
-- <b>Affordability!</b>
 
+## Available SOM Cores
+- RP2040 SOM Core (Control)
+- ESP32-S3 SOM Core (Guidance/Navigation)
+- NXP i.MXRT1062 SOM Core (Guidance/Navigation)
+- Many more to come...
 
 <br/> <br/> <br/> 
 
