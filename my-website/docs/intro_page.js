@@ -6,6 +6,19 @@ import styles from './intro_styles.module.css';
 
 const HardwareList = [
   {
+    title: "AeroCore",
+    Svg: require("./_imgs/hermes.svg").default,
+    description: (
+      <>
+        <i>
+          UAV Guidance Navigation & Control System
+          <br />
+        </i>
+      </>
+    ),
+    path: "/docs/AeroCore/overview",
+  },
+  {
     title: "Hermes",
     Svg: require("./_imgs/hermes.svg").default,
     description: (
