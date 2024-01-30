@@ -31,7 +31,7 @@ const ProjectList = [
     ),
   },
   {
-    title: "Ray-gram",
+    title: "gram",
     Image: require("@site/static/img/ray-gram.gif").default,
     link: "https://github.com/RaymondBello/ray-gram",
     description: (
